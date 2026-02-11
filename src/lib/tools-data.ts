@@ -1,0 +1,70 @@
+export interface ToolMeta {
+  slug: string;
+  name: string;
+  description: string;
+  category: 'finance' | 'marketing' | 'planning' | 'operations' | 'fundraising';
+  icon: string;
+}
+
+export const toolsList: ToolMeta[] = [
+  { slug: 'startup-valuation-calculator', name: 'Startup Valuation Calculator', description: 'Estimate your startup valuation using multiple methods including DCF, comparable analysis, and scorecard.', category: 'finance', icon: '💰' },
+  { slug: 'burn-rate-calculator', name: 'Burn Rate Calculator', description: 'Calculate your monthly burn rate and understand your spending patterns.', category: 'finance', icon: '🔥' },
+  { slug: 'runway-estimator', name: 'Runway Estimator', description: 'Estimate how many months of runway you have left based on current burn rate.', category: 'finance', icon: '🛫' },
+  { slug: 'cap-table-builder', name: 'Cap Table Builder', description: 'Build and manage your capitalization table with shareholders and equity splits.', category: 'fundraising', icon: '📊' },
+  { slug: 'pitch-deck-scorer', name: 'Pitch Deck Scorer', description: 'Score your pitch deck across key dimensions that investors evaluate.', category: 'fundraising', icon: '🎯' },
+  { slug: 'tam-sam-som-calculator', name: 'TAM/SAM/SOM Calculator', description: 'Calculate your Total Addressable, Serviceable, and Obtainable Market sizes.', category: 'marketing', icon: '🌍' },
+  { slug: 'unit-economics-calculator', name: 'Unit Economics Calculator', description: 'Analyze the direct revenues and costs associated with a single unit.', category: 'finance', icon: '📈' },
+  { slug: 'mrr-arr-tracker', name: 'MRR/ARR Tracker', description: 'Track Monthly and Annual Recurring Revenue with growth metrics.', category: 'finance', icon: '📅' },
+  { slug: 'churn-rate-calculator', name: 'Churn Rate Calculator', description: 'Calculate customer and revenue churn rates for your subscription business.', category: 'finance', icon: '📉' },
+  { slug: 'cac-calculator', name: 'Customer Acquisition Cost Calculator', description: 'Calculate how much it costs to acquire each new customer.', category: 'marketing', icon: '🎯' },
+  { slug: 'ltv-calculator', name: 'LTV Calculator', description: 'Calculate customer lifetime value using multiple models.', category: 'finance', icon: '💎' },
+  { slug: 'break-even-analysis', name: 'Break-Even Analysis', description: 'Determine when your startup will become profitable.', category: 'finance', icon: '⚖️' },
+  { slug: 'revenue-forecast', name: 'Revenue Forecast Tool', description: 'Project future revenue with multiple growth scenarios.', category: 'finance', icon: '🔮' },
+  { slug: 'funding-round-simulator', name: 'Funding Round Simulator', description: 'Simulate funding rounds and see the impact on ownership and dilution.', category: 'fundraising', icon: '💸' },
+  { slug: 'equity-dilution-calculator', name: 'Equity Dilution Calculator', description: 'Calculate how new funding rounds dilute existing shareholders.', category: 'fundraising', icon: '🔄' },
+  { slug: 'startup-name-generator', name: 'Startup Name Generator', description: 'Generate creative startup names based on your industry and keywords.', category: 'planning', icon: '✨' },
+  { slug: 'business-model-canvas', name: 'Business Model Canvas Builder', description: 'Build a comprehensive Business Model Canvas for your startup.', category: 'planning', icon: '🏗️' },
+  { slug: 'lean-canvas', name: 'Lean Canvas Tool', description: 'Create a Lean Canvas to validate your business model quickly.', category: 'planning', icon: '📝' },
+  { slug: 'swot-analysis', name: 'SWOT Analysis Builder', description: 'Build a Strengths, Weaknesses, Opportunities, Threats analysis.', category: 'planning', icon: '🔍' },
+  { slug: 'competitor-analysis', name: 'Competitor Analysis Matrix', description: 'Compare your startup against competitors across key dimensions.', category: 'planning', icon: '⚔️' },
+  { slug: 'market-size-estimator', name: 'Market Size Estimator', description: 'Estimate your market size using top-down and bottom-up approaches.', category: 'marketing', icon: '📏' },
+  { slug: 'pricing-strategy-calculator', name: 'Pricing Strategy Calculator', description: 'Find the optimal price point using different pricing strategies.', category: 'marketing', icon: '🏷️' },
+  { slug: 'cash-flow-projector', name: 'Cash Flow Projector', description: 'Project your cash flows over the next 12-24 months.', category: 'finance', icon: '💵' },
+  { slug: 'invoice-generator', name: 'Invoice Generator', description: 'Create professional invoices for your startup clients.', category: 'operations', icon: '🧾' },
+  { slug: 'esop-calculator', name: 'Employee Stock Option Calculator', description: 'Calculate the value of employee stock options under different scenarios.', category: 'fundraising', icon: '🎁' },
+  { slug: 'vesting-schedule-calculator', name: 'Vesting Schedule Calculator', description: 'Visualize equity vesting over time with cliff and acceleration.', category: 'fundraising', icon: '📆' },
+  { slug: 'valuation-409a', name: '409A Valuation Estimator', description: 'Estimate the fair market value for 409A compliance.', category: 'finance', icon: '🏛️' },
+  { slug: 'convertible-note-calculator', name: 'Convertible Note Calculator', description: 'Calculate conversion terms including discount and cap scenarios.', category: 'fundraising', icon: '📜' },
+  { slug: 'safe-calculator', name: 'SAFE Calculator', description: 'Model SAFE conversions with valuation caps and discounts.', category: 'fundraising', icon: '🔐' },
+  { slug: 'term-sheet-analyzer', name: 'Term Sheet Analyzer', description: 'Analyze and compare term sheet provisions with market benchmarks.', category: 'fundraising', icon: '📋' },
+  { slug: 'due-diligence-checklist', name: 'Due Diligence Checklist', description: 'Track due diligence items for fundraising or acquisition.', category: 'fundraising', icon: '✅' },
+  { slug: 'expense-tracker', name: 'Startup Expense Tracker', description: 'Track and categorize your startup expenses.', category: 'finance', icon: '🧮' },
+  { slug: 'kpi-dashboard', name: 'KPI Dashboard Builder', description: 'Build a custom KPI dashboard for your startup metrics.', category: 'operations', icon: '📊' },
+  { slug: 'okr-tracker', name: 'OKR Tracker', description: 'Set and track Objectives and Key Results for your team.', category: 'operations', icon: '🎯' },
+  { slug: 'product-roadmap', name: 'Product Roadmap Planner', description: 'Plan your product roadmap with timelines and priorities.', category: 'planning', icon: '🗺️' },
+  { slug: 'sprint-planning', name: 'Sprint Planning Tool', description: 'Plan sprints with story points and velocity tracking.', category: 'operations', icon: '🏃' },
+  { slug: 'user-story-generator', name: 'User Story Generator', description: 'Generate well-formatted user stories from feature descriptions.', category: 'operations', icon: '📖' },
+  { slug: 'ab-test-calculator', name: 'A/B Test Calculator', description: 'Calculate statistical significance of your A/B test results.', category: 'marketing', icon: '🧪' },
+  { slug: 'cohort-analysis', name: 'Cohort Analysis Tool', description: 'Analyze user cohorts for retention and engagement patterns.', category: 'marketing', icon: '👥' },
+  { slug: 'funnel-conversion', name: 'Funnel Conversion Calculator', description: 'Calculate conversion rates across your sales or product funnel.', category: 'marketing', icon: '🔻' },
+  { slug: 'email-subject-tester', name: 'Email Subject Line Tester', description: 'Score and optimize your email subject lines for higher open rates.', category: 'marketing', icon: '✉️' },
+  { slug: 'social-media-roi', name: 'Social Media ROI Calculator', description: 'Calculate return on investment from social media marketing.', category: 'marketing', icon: '📱' },
+  { slug: 'content-calendar', name: 'Content Calendar Planner', description: 'Plan and organize your content marketing calendar.', category: 'marketing', icon: '📅' },
+  { slug: 'seo-keyword-analyzer', name: 'SEO Keyword Analyzer', description: 'Analyze keyword difficulty and optimize your SEO strategy.', category: 'marketing', icon: '🔎' },
+  { slug: 'domain-name-checker', name: 'Domain Name Checker', description: 'Check domain name availability and get suggestions.', category: 'planning', icon: '🌐' },
+  { slug: 'brand-color-generator', name: 'Brand Color Palette Generator', description: 'Generate professional color palettes for your startup brand.', category: 'planning', icon: '🎨' },
+  { slug: 'pitch-timer', name: 'Startup Pitch Timer', description: 'Practice your pitch with a countdown timer and section tracking.', category: 'fundraising', icon: '⏱️' },
+  { slug: 'elevator-pitch-builder', name: 'Elevator Pitch Builder', description: 'Craft a compelling 30-second elevator pitch.', category: 'fundraising', icon: '🛗' },
+  { slug: 'investor-update', name: 'Investor Update Template', description: 'Generate professional monthly investor update emails.', category: 'fundraising', icon: '📧' },
+  { slug: 'board-meeting-agenda', name: 'Board Meeting Agenda Builder', description: 'Create structured board meeting agendas with time allocation.', category: 'operations', icon: '📋' },
+  { slug: 'profit-margin-calculator', name: 'Profit Margin Calculator', description: 'Calculate gross, operating, and net profit margins.', category: 'finance', icon: '💹' },
+  { slug: 'saas-metrics-dashboard', name: 'SaaS Metrics Dashboard', description: 'Track essential SaaS metrics like ARR, NRR, and magic number.', category: 'finance', icon: '📊' },
+];
+
+export const categoryLabels: Record<string, string> = {
+  finance: 'Financial Tools',
+  marketing: 'Marketing & Growth',
+  planning: 'Strategy & Planning',
+  operations: 'Operations & Management',
+  fundraising: 'Fundraising & Equity',
+};
